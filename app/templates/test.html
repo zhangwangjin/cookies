@@ -1,0 +1,67 @@
+{% extends "User_Base.html" %}
+
+{% macro render_field(field) %}
+  <dt>{{ field.label }}
+  <dd>{{ field(**kwargs)|safe }}
+  {% if field.errors %}
+    <ul class=errors>
+    {% for error in field.errors %}
+      <li>{{ error }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+  </dd>
+{% endmacro %}
+
+{% block left %}
+    <div class="step_1"></div>
+    <form action="register" method="post" name="register">
+    {{ form.csrf_token() }}
+        <ul>
+            <li>
+                {{ render_field(form.email) }}
+                <p>{{ form.email.label }}:{{ form.email }}
+                <span id="emailErr"></span>
+                </p>
+            </li>
+
+            <li>
+               <p>{{ form.password.label }}:{{ form.password }}
+               <span id="pwdErr"></span>
+               </p>
+            </li>
+
+            <li>
+                <p>{{ form.rpassword.label }}:{{ form.rpassword }}</p>
+                <span id="pwd2Err"></span>
+            </li>
+
+
+            <li class="reg_check_li">
+                <div class="reg_check_div">
+                    <input name="xieyi" type="checkbox" id="xieyi" value style="vertical-align: middle;"/>
+                    <a href="#" class="web_clause">我已阅读并同意《加密用户服务条款》</a>
+                </div>
+                <span id="Ische" style="color: red; display: none;"></span>
+            </li>
+
+            <li>
+                <input type="submit" class="register_btn" id="reg" value="立即注册"/>
+
+            </li>
+
+        </ul>
+    </form>
+
+{% endblock %}
+
+{% block right %}
+     <div class="login_right">
+         <h3>登录</h3>
+         <h4>已有加密账号?</h4>
+         <form>
+             <a href="#">登&nbsp;&nbsp;录</a>
+         </form>
+     </div>
+
+{% endblock %}

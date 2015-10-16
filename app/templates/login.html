@@ -1,0 +1,53 @@
+{% extends "User_Base.html" %}
+
+{% block left %}
+    <div class="step_1"></div>
+    <form action="" method="post" name="register">
+        <ul>
+            <li>
+                <label>邮箱账号:</label>
+                <input type="text" class="username" id = "email" placeholder="请输入有效的电子邮箱"/>
+                <span id="emailErr"></span>
+            </li>
+
+            <li>
+                <label>密&nbsp;&nbsp;&nbsp;码:</label>
+                <input type="password" class="password" id = "pwd" maxlength="20" placeholder="4-20位密码长度，字母区分大小写"/>
+                <span id="pwdErr"></span>
+            </li>
+
+            <li>
+                <label>确认密码:</label>
+                <input type="password" class="password" id = "pwd2" placeholder="请再次输入密码" maxlength="20"/>
+                <span id="pwd2Err"></span>
+            </li>
+
+
+            <li class="reg_check_li">
+                <div class="reg_check_div">
+                    <input name="xieyi" type="checkbox" id="xieyi" value style="vertical-align: middle;"/>
+                    <a href="#" class="web_clause">我已阅读并同意《加密用户服务条款》</a>
+                </div>
+                <span id="Ische" style="color: red; display: none;"></span>
+            </li>
+
+            <li>
+                <input type="submit" class="register_btn" id="reg" value="立即注册"/>
+
+            </li>
+
+        </ul>
+    </form>
+
+{% endblock %}
+
+{% block right %}
+     <div class="login_right">
+         <h3>登录</h3>
+         <h4>已有加密账号?</h4>
+         <form>
+             <a href="#">登&nbsp;&nbsp;录</a>
+         </form>
+     </div>
+
+{% endblock %}

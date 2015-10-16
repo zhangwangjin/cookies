@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+
+    <link href="../static/css/User_Base.css" rel="stylesheet" type="text/css" />
+    <title>
+        {{ title }}
+    </title>
+</head>
+<body>
+    <div class="head_top">
+        <div class="head_top_box">
+        <span>服务热线:12345678945612</span>
+        {% block top %}
+
+        {% endblock %}
+        <p>
+            {% if user %}
+                <p>
+                    {{ username }}
+                </p>
+            {% else %}
+                <a href="{{ url_for('login') }}" class="login_a">登录</a>
+                <a href="{{ url_for('register') }}" class="register_a">注册</a>
+            {% endif %}
+        </p>
+
+         </div>
+    </div>
+
+    <!--头部部分-->
+	<div class="head">
+		<div class="head_box">
+            <a href="#" class="logo">
+                <img src="../static/images/logo.jpg">
+            </a>
+            <ul>
+                <li><a href="#">首页</a> </li>
+                <li><a href="#">应用加固</a> </li>
+                <li><a href="#">相关资讯</a> </li>
+                <li><a href="#">更多服务</a> </li>
+            </ul>
+        </div>
+	</div>
+
+    <!--***************-->
+    <div class="small_tit">
+        <div class="small_tit_box">
+            <h1>
+                {{ title }}
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <!--内容部分-->
+    <div class="content">
+        <div class="content_box">
+            <div class="login_left">
+                <h3>{{ title }}</h3>
+                {% block left %}{% endblock %}
+
+            </div>
+
+            <div class="login_right">
+			    {% block right %}{% endblock %}
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="Footer">
+
+        <div class="Footer_tit">
+            <a>帮助文档</a>
+            <a>关于我们</a>
+            <a>联系我们</a>
+            <a style="width: 190px; float: right">关注我们</a>
+
+        </div>
+
+        <div class="Footer_nav">
+            <dl>
+                <dd>
+                    <a href="#" >操作流程</a>
+                </dd>
+                <dd>
+                    <a href="#" >常见问题</a>
+                </dd>
+                <dd>
+                    <a href="#" >演示案例</a>
+                </dd>
+                <dd>
+                    <a href="#" >解决方案</a>
+                </dd>
+
+            </dl>
+
+
+            <dl>
+                <dd>
+                    <a href="#" >公司介绍</a>
+                </dd>
+                <dd>
+                    <a href="#" >加密资讯</a>
+                </dd>
+                <dd>
+                    <a href="#" >服务条款</a>
+                </dd>
+                <dd>
+                    <a href="#" >合作伙伴</a>
+                </dd>
+
+            </dl>
+
+
+            <dl>
+                <dd>
+                    <a href="#" >客户QQ:24578451</a>
+                </dd>
+                <dd>
+                    <a href="#" >邮箱:78544@4132.com</a>
+                </dd>
+                <dd>
+                    <a href="#" >更多方式</a>
+                </dd>
+                <dd>
+                    <a href="#" >敬请期待</a>
+                </dd>
+
+            </dl>
+
+
+            <dl style="width: 190px; float: right">
+                <dd>
+                    <a href="#" >新浪:45646546</a>
+                </dd>
+                <dd>
+                    <a href="#" >敬请期待</a>
+                </dd>
+                <dd>
+                    <a href="#" >敬请期待</a>
+                </dd>
+                <dd>
+                    <a href="#" >敬请期待</a>
+                </dd>
+
+            </dl>
+        </div>
+
+    </div>
+</body>
+</html>

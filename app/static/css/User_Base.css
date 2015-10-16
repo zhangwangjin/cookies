@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+
+/*头部之上*/
+.head_top{height: 30px; background: #323436;}
+.head_top_box{height: 30px; width: 1000px; margin: 0 auto}
+.head_top_box span {color: #7c7c7c;float: left; padding-right: 12px; display: inline-block; height: 30px; line-height: 30px;}
+.head_top_box p {height: 30px; float: right; display: block; color: #fff; }
+.head_top_box p a {width: 70px; background: #505050; text-align: center; color: #fff;margin-left: 5px;text-decoration: none;display: inline-block; float: left; height: 30px; line-height: 30px;}
+.head_top_box p a:hover{color: blueviolet;}
+/*头部*/
+.head{position: relative; z-index: 2; width: 100%; height: 70px; background: #fff; box-shadow: 0 1px 3px #333}
+.head_box {width: 1000px; height: 42px; margin: 0 auto; padding: 14px 0}
+.head_box a.logo{display: block; float: left;width: 146px;height:42px;padding-left: 260px;}
+.head_box  ul { float: right;height:40px; margin-top: 1px;}
+.head_box ul li {position: relative; display: inline-block; float: left; width: 92px;height: 40px; margin-left: 24px; z-index: 1;}
+.head_box ul li a {display: block; height: 40px; line-height: 40px; font-size: 16px; font-weight: 600; text-align: center; color: #2b2b2b; text-decoration: none;}
+.head_box ul li a:hover{color: #93ccff}
+
+.small_tit{width:100%; height: 76px; background: #146bd3 }
+.small_tit_box{margin: 0 auto; width: 1000px; height: 76px; background: #146bd3; position: relative;}
+.small_tit_box h1 {font-size: 36px; color: #fff; line-height: 76px; font-weight: 400;}
+
+/*内容部分*/
+.content{width: 100%; min-height: 500px; padding: 21px 0; background: #e9edf1;}
+.content_box{height: 500px; padding-bottom: 50px; margin: 0 auto; width: 1000px;background: #fff; border-bottom: 6px solid #e1e4e7}
+.login_left {height: 500px; float: left; width: 590px;}
+.login_left h3{margin-top: 17px; width: 300px; height: 26px; line-height: 26px;color: #0089D7; font-size: 24px; font-weight: 400}
+.step_1{margin-top: 20px; width: 590px; height: 29px; background: url("../images/reg_step.png");}
+.login_left ul{margin: 0 auto; padding-top: 33px; width: 500px; height: 370px; overflow: hidden}
+.login_left ul li {width: 500px; height: 60px; padding-bottom: 10px; position: relative; list-style: none; display: list-item; }
+.login_left ul li.reg_check_li{height: 34px;width: 500px; padding-bottom: 10px; position: relative; list-style: none;}
+.reg_check_div{padding: 0 0 20px 75px; height: 14px; line-height: 14px; }
+.reg_check_div input{display: block; float: left; height: 14px; width: 14px;}
+.login_left ul li label{display: block; float: left; width: 75px; line-height: 60px; font-size: 14px; color: #525252; cursor: default;list-style: none;}
+.login_left ul li span{color: red; position: absolute; width: 221px; display: block; line-height: 18px; top: 25px; left: 320px;}
+.register_btn{float: left; display: inline-block; zoom: 1; margin-left: 73px; width: 113px; height: 40px; line-height: 40px;border: none; cursor: pointer; font-size: 14px;font-weight: 700; color: #fff; background: #07aa29}
+.register_btnGray{float: left; display: inline-block; zoom: 1; margin-left: 73px; width: 113px; height: 40px; line-height: 40px;border: none; cursor: pointer; font-size: 14px;font-weight: 700; color: #fff; background:gray}
+.web_clause {display: inline-block;font-size: 13px; float: left; padding-left: 3px;height: 14px;width: 230px;line-height: 14px;color: #0089D7}
+.web_clause a{outline: none; text-decoration: none;}
+.username, .password {padding: 10px 5px; display: block; float: left; margin-top: 10px; width: 350px; height: 21px; line-height: 21px; border: 0px solid #d5d5d5}
+
+
+.login_right{float:right; width:250px; height:auto; margin-top: 35px; padding-right:55px;_padding-right:20px; padding-left: 37px; border-left:1px solid #f5f5f5;}
+.login_right h3{ font-family:"Microsoft YaHei",Arial; width:300px; height:26px; line-height:26px; color: #0089D7; font-size: 24px; font-weight: 400;}
+.login_right h4{font-family:"Microsoft YaHei",Arial;  height: 45px; line-height: 45px; font-size: 16px; color: #525252; font-weight: 500;}
+.login_right a{display:block; margin-bottom:10px; width:112px; height: 35px; line-height: 35px; font-size: 14px; font-weight: 700; color: #fff; background: #0089D7; text-align: center;text-decoration:none;}
+
+
+/*尾部*/
+.Footer {margin-top: 20px; padding-top:27px; background:#0d4383;overflow: hidden;}
+.Footer_tit { height:16px; width: 1000px; margin: 0 auto; padding-bottom: 14px; border-bottom: 1px solid #00336f;}
+.Footer_tit a {display: inline-block; float: left; width: 260px; height: 16px; line-height: 16px; font-size: 14px; font-weight: 700; color: #93ccff;}
+
+.Footer_nav { width: 1000px;background:#0d4383;  padding-top: 8px; padding-bottom: 20px; margin: 0 auto; position: relative; border-top: 1px solid #1b58a1;}
+.Footer_nav dl{display:inline-block; zoom:1;width:260px; float:left;}
+.Footer_nav dl dd {height:32px; line-height:32px;}
+.Footer_nav dl dd a{color:#94ccfd; text-decoration: none;}
+.Footer_nav dl dd a:hover{color: brown}
+
+/************************我是分割线**********************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
